@@ -100,17 +100,6 @@ namespace ORB_SLAM3 {
         float minThFAST() {return minThFAST_;}
         float scaleFactor() {return scaleFactor_;}
 
-        float keyFrameSize() {return keyFrameSize_;}
-        float keyFrameLineWidth() {return keyFrameLineWidth_;}
-        float graphLineWidth() {return graphLineWidth_;}
-        float pointSize() {return pointSize_;}
-        float cameraSize() {return cameraSize_;}
-        float cameraLineWidth() {return cameraLineWidth_;}
-        float viewPointX() {return viewPointX_;}
-        float viewPointY() {return viewPointY_;}
-        float viewPointZ() {return viewPointZ_;}
-        float viewPointF() {return viewPointF_;}
-        float imageViewerScale() {return imageViewerScale_;}
 
         std::string atlasLoadFile() {return sLoadFrom_;}
         std::string atlasSaveFile() {return sSaveto_;}
@@ -150,7 +139,6 @@ namespace ORB_SLAM3 {
         void readIMU(cv::FileStorage& fSettings);
         void readRGBD(cv::FileStorage& fSettings);
         void readORB(cv::FileStorage& fSettings);
-        void readViewer(cv::FileStorage& fSettings);
         void readLoadAndSave(cv::FileStorage& fSettings);
         void readOtherParameters(cv::FileStorage& fSettings);
 
@@ -205,18 +193,6 @@ namespace ORB_SLAM3 {
         float scaleFactor_;
         int nLevels_;
         int initThFAST_, minThFAST_;
-
-        /*
-         * Viewer stuff
-         */
-        float keyFrameSize_;
-        float keyFrameLineWidth_;
-        float graphLineWidth_;
-        float pointSize_;
-        float cameraSize_;
-        float cameraLineWidth_;
-        float viewPointX_, viewPointY_, viewPointZ_, viewPointF_;
-        float imageViewerScale_;
 
         /*
          * Save & load maps

@@ -82,8 +82,6 @@ public:
 
     bool isFinished();
 
-    Viewer* mpViewer;
-
 #ifdef REGISTER_TIMES
 
     vector<double> vdDataQuery_ms;
@@ -223,7 +221,7 @@ protected:
     bool mbFixScale;
 
 
-    bool mnFullBAIdx;
+    int mnFullBAIdx;
 
 
 
