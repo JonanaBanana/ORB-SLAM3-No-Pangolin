@@ -7,6 +7,8 @@
 # Unignore all dirs
 !*/
 
+!SOPHUS_VERSION
+
 CMakeLists.txt.user
 CMakeLists_modified.txt
 
